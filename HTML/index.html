@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#050505">
+  <title>SHARKY WEB | Inicio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../CSS/common.css">
+  <link rel="stylesheet" href="../CSS/inicio.css">
+  <script src="../JS/common.js" defer></script>
+  <script src="../JS/catalogo.js" defer></script>
+  <script src="../JS/eventos.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+  <header class="site-header">
+    <div class="container site-header__inner">
+      <a class="site-logo" href="index.html" aria-label="SHARKY WEB, inicio">SHARKY</a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation" aria-label="Abrir menú">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="site-nav" id="primary-navigation" aria-label="Navegación principal">
+        <div class="site-nav__links">
+          <a class="site-nav__link" href="index.html">Inicio</a>
+          <a class="site-nav__link" href="nosotros.html">Nosotros</a>
+          <a class="site-nav__link" href="catalogo.html">Catálogo</a>
+          <a class="site-nav__link" href="eventos.html">Tu futuro Sharky</a>
+          <a class="site-nav__link" href="contacto.html">Contacto</a>
+        </div>
+        <div class="site-nav__social" aria-label="Redes sociales">
+          <a href="contacto.html#redes">Instagram</a>
+          <a href="contacto.html#redes">TikTok</a>
+          <a href="contacto.html#redes">YouTube</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <main class="home-page" id="contenido">
+    <section class="home-hero container" aria-labelledby="page-title">
+      <div class="home-intro">
+        <p class="eyebrow">Una propuesta digital para SHARK EVENTS</p>
+        <h1 id="page-title">SHARKY WEB</h1>
+        <p class="home-intro__subtitle">Descubre el universo Sharky.</p>
+        <p class="home-intro__copy">Conoce los peluches que han formado parte de nuestras fiestas, revive su ambiente y encuentra los próximos encuentros cuando sus fechas estén confirmadas.</p>
+        <a class="button button--primary" href="catalogo.html">Descubrir Sharkies <span class="button__arrow" aria-hidden="true">→</span></a>
+      </div>
+      <figure class="home-hero__media">
+        <img src="../IMAGES/general/Captura de pantalla 2026-11-26 192529.png" alt="Público ante un escenario con humo rosa y una figura de tiburón" fetchpriority="high">
+        <figcaption>Una noche en el universo SHARK.</figcaption>
+      </figure>
+    </section>
+
+    <section class="home-about container" aria-labelledby="home-about-title">
+      <div class="home-about__copy">
+        <p class="eyebrow">SHARK EVENTS</p>
+        <h2 id="home-about-title">Las fiestas, su gente y los Sharkies.</h2>
+        <p>SHARKY WEB reúne momentos de las fiestas, al equipo y a los peluches que han pasado por ellas. Un primer vistazo al universo Shark, construido a partir de fotografías reales.</p>
+        <a class="text-link" href="nosotros.html">Conocer SHARK EVENTS <span aria-hidden="true">→</span></a>
+      </div>
+      <div class="home-about__photos">
+        <figure class="home-photo home-photo--crowd">
+          <img src="../IMAGES/general/Captura de pantalla 2026-11-26 193026.png" alt="Público ante personas con disfraces inflables de tiburón" loading="lazy">
+          <figcaption>Fiestas, público y momentos para recordar</figcaption>
+        </figure>
+        <figure class="home-photo home-photo--team">
+          <img src="../IMAGES/equipo_fiestas_ambiente/Captura de pantalla 2026-11-26 193232.png" alt="Tres integrantes del equipo con camisetas SHARK EVENTS" loading="lazy">
+          <figcaption>El equipo de SHARK EVENTS</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="home-section container" aria-labelledby="featured-sharkies-title">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">Piezas de colección</p>
+          <h2 id="featured-sharkies-title">Algunos Sharkies</h2>
+        </div>
+        <a class="text-link" href="catalogo.html">Ver catálogo <span aria-hidden="true">→</span></a>
+      </div>
+      <div class="sharky-grid sharky-grid--featured" data-sharky-featured data-limit="4" aria-live="polite"></div>
+    </section>
+
+    <section class="home-section home-events container" aria-labelledby="home-events-title">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">Carteles de fiestas</p>
+          <h2 id="home-events-title">El próximo encuentro, cuando se confirme.</h2>
+        </div>
+        <a class="text-link" href="eventos.html">Ver calendario y carteles <span aria-hidden="true">→</span></a>
+      </div>
+      <p class="home-events__note">Los carteles disponibles forman parte del archivo visual. Las fechas de próximas ediciones están pendientes de confirmación.</p>
+      <div class="event-preview-grid" data-event-preview data-limit="3" aria-live="polite"></div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="container site-footer__inner">
+      <a class="site-footer__brand" href="index.html">SHARKY</a>
+      <p>Una propuesta digital para SHARK EVENTS.</p>
+      <div class="site-footer__links" aria-label="Enlaces sociales">
+        <a href="contacto.html#redes">Instagram</a>
+        <a href="contacto.html#redes">TikTok</a>
+        <a href="contacto.html#redes">YouTube</a>
+      </div>
+      <small>© 2026 SHARKY WEB</small>
+    </div>
+  </footer>
+</body>
+</html>

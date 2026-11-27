@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#050505">
+  <title>Tu futuro Sharky | SHARKY WEB</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../CSS/common.css">
+  <link rel="stylesheet" href="../CSS/eventos.css">
+  <script src="../JS/common.js" defer></script>
+  <script src="../JS/eventos.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+  <header class="site-header">
+    <div class="container site-header__inner">
+      <a class="site-logo" href="index.html" aria-label="SHARKY WEB, inicio">SHARKY</a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation" aria-label="Abrir menú">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="site-nav" id="primary-navigation" aria-label="Navegación principal">
+        <div class="site-nav__links">
+          <a class="site-nav__link" href="index.html">Inicio</a>
+          <a class="site-nav__link" href="nosotros.html">Nosotros</a>
+          <a class="site-nav__link" href="catalogo.html">Catálogo</a>
+          <a class="site-nav__link" href="eventos.html">Tu futuro Sharky</a>
+          <a class="site-nav__link" href="contacto.html">Contacto</a>
+        </div>
+        <div class="site-nav__social" aria-label="Redes sociales">
+          <a href="contacto.html#redes">Instagram</a>
+          <a href="contacto.html#redes">TikTok</a>
+          <a href="contacto.html#redes">YouTube</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <main class="container page-content events-page" id="contenido">
+    <section class="page-intro" aria-labelledby="page-title">
+      <p class="eyebrow">Calendario y carteles</p>
+      <h1 id="page-title">Tu futuro Sharky</h1>
+      <p>Consulta el calendario y explora los carteles de las fiestas. Las próximas fechas se publicarán cuando estén confirmadas.</p>
+    </section>
+    <section class="events-calendar-section" aria-label="Calendario de eventos y Sharky de demostración">
+      <div class="calendar">
+        <div class="calendar__toolbar">
+          <div class="calendar__month-navigation">
+            <button class="calendar__arrow" type="button" data-calendar-step="-1" aria-label="Periodo anterior">←</button>
+            <h2 class="calendar__heading" data-calendar-heading aria-live="polite"></h2>
+            <button class="calendar__arrow" type="button" data-calendar-step="1" aria-label="Periodo siguiente">→</button>
+          </div>
+          <div class="calendar__views" role="group" aria-label="Vista del calendario">
+            <button type="button" data-calendar-view="month" aria-pressed="true">Mes</button>
+            <button type="button" data-calendar-view="week" aria-pressed="false">Semana</button>
+            <button type="button" data-calendar-view="day" aria-pressed="false">Día</button>
+          </div>
+        </div>
+        <div class="calendar__weekdays" data-calendar-weekdays aria-hidden="true"></div>
+        <div class="calendar__grid" data-calendar-grid role="grid" aria-label="Calendario de eventos"></div>
+        <section class="calendar__selection" aria-labelledby="calendar-selection-title">
+          <h3 id="calendar-selection-title" data-calendar-selection-date aria-live="polite"></h3>
+          <div data-calendar-selection-events aria-live="polite"></div>
+        </section>
+        <p class="calendar__note">Los indicadores rosas aparecerán al añadir eventos con fecha confirmada.</p>
+      </div>
+      <aside class="calendar-demo">
+        <img src="../IMAGES/Catalogo_sharkys/shark_rosa.png" alt="Sharky rosa de demostración en una fiesta" loading="lazy">
+        <div>
+          <p class="eyebrow">Sharky de demostración</p>
+          <h2>Sharky rosa</h2>
+          <p>Una fotografía real del modelo rosa acompaña esta propuesta de calendario.</p>
+        </div>
+      </aside>
+    </section>
+
+    <section class="event-archive" aria-labelledby="event-archive-title">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">Archivo visual</p>
+          <h2 id="event-archive-title">Carteles de fiestas</h2>
+        </div>
+      </div>
+      <p class="event-archive__note">Los carteles se muestran como material de archivo. No indican que el evento tenga una nueva fecha anunciada.</p>
+      <div class="event-archive-grid" data-event-archive aria-live="polite"></div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="container site-footer__inner">
+      <a class="site-footer__brand" href="index.html">SHARKY</a>
+      <p>Una propuesta digital para SHARK EVENTS.</p>
+      <div class="site-footer__links" aria-label="Enlaces sociales">
+        <a href="contacto.html#redes">Instagram</a>
+        <a href="contacto.html#redes">TikTok</a>
+        <a href="contacto.html#redes">YouTube</a>
+      </div>
+      <small>© 2026 SHARKY WEB</small>
+    </div>
+  </footer>
+</body>
+</html>
